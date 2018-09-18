@@ -1,0 +1,32 @@
+import golondrinas.*
+import comidas.*
+test "testJuliana" {
+	var juliana = new Golondrinas()
+	juliana.comer(alpiste,50)
+	juliana.energia()
+	juliana.estaFeliz() 
+	juliana.estaDebil()
+	assert.equals(200,juliana.energia())
+}
+
+test "testTatiana" {
+	var tatiana = new Golondrinas()
+	tatiana.comer(sorgo,8)
+	tatiana.volar(40)
+	tatiana.energia()
+	tatiana.estaFeliz()
+	tatiana.estaDebil()
+	assert.equals(22,tatiana.energia())
+	assert.equals(tatiana.estaDebil())
+}
+
+test "testMelina"  {
+	var melina = new Golondrinas()
+	melina.comer(mondongo,9)
+	melina.volar(130)
+	melina.energia()
+	melina.estaFeliz()
+	melina.estaDebil()
+	assert.equals(760,melina.energia())
+	assert.equals(melina.estaFeliz())
+}
